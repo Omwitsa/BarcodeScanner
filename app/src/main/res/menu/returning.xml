@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/ihome"
+        android:alphabeticShortcut="a"
+        android:numericShortcut="1"
+        android:title="Home Page" />
+    <item
+        android:id="@+id/ireceive"
+        android:alphabeticShortcut="a"
+        android:numericShortcut="1"
+        android:title="Receiving Page"/>
+    <item
+        android:id="@+id/iload"
+        android:alphabeticShortcut="a"
+        android:numericShortcut="1"
+        android:title="Loading Page"/>
+    <item
+        android:id="@+id/exit"
+        android:alphabeticShortcut="a"
+        android:numericShortcut="1"
+        android:title="Exit"/>
+
+</menu>

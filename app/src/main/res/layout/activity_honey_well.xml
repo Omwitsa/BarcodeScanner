@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/basket"
+        android:id="@+id/imagehead"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lin1"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagehead">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PALLET NUMBER:"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="182dp" />
+        <TextView
+            android:id="@+id/palletNumber"
+            android:layout_width="46dp"
+            android:layout_height="25dp"
+
+            android:gravity="center"
+            android:text=""
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="209dp"
+            tools:layout_editor_absoluteY="182dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lin2"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin1">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PALLET COUNT:"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="182dp" />
+        <TextView
+            android:id="@+id/palletCount"
+            android:layout_width="46dp"
+            android:layout_height="25dp"
+
+            android:gravity="center"
+            android:text=""
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="209dp"
+            tools:layout_editor_absoluteY="182dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textViewh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin2"
+        android:text=""
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="295dp" />
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="1"
+        android:background="@color/black"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/basket"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Logged in as: "
+            android:id="@+id/txtuser"
+            android:textSize="16sp"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:fontFamily="serif-monospace"
+            android:layout_margin="10dp"
+            />
+
+
+        <!--    <Button-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="536dp"
+            android:layout_marginTop="20sp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/dispatchBtn"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="20sp"
+
+                android:background="@color/redrose"
+                android:text="DISPATCH"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/packhouseBtn"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/roundbtn"
+                android:gravity="center"
+                android:text="PACKLIST"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <!--    <Button-->
+        <!--        android:id="@+id/downloadall"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:text="DOWNLOAD ALL"-->
+
+        <!--        android:layout_margin="5dp"-->
+        <!--        android:background="@color/redrose"-->
+        <!--        android:textColor="@color/white"/>-->
+        <!--    <Button-->
+        <!--        android:id="@+id/btnviewtoday"-->
+        <!--        android:layout_margin="5dp"-->
+        <!--        android:background="@color/redrose"-->
+        <!--        android:textColor="@color/white"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:text="VIEW TODAY"-->
+        <!--        android:layout_marginTop="10sp"/>-->
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainLayoutActivity">
+
+    <GridLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="1"
+        android:background="@color/black"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/basket"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Logged in as: "
+            android:id="@+id/txtuser"
+            android:textSize="16sp"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:fontFamily="serif-monospace"
+            android:layout_margin="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:background="@drawable/roundbtn"
+                android:layout_width="150sp"
+                android:layout_height="40sp"
+                android:text="RECEIVING ZONE"
+                android:id="@+id/receiveBtn"
+                android:textColor="@color/white"
+                />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/loadBtn"
+                android:background="@drawable/roundbtn"
+                android:layout_width="150sp"
+                android:layout_height="40sp"
+                android:layout_gravity="start"
+                android:text="LOADING ZONE"
+                android:textColor="@color/white"/>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/returnBtn"
+                android:layout_width="150sp"
+                android:layout_height="40sp"
+                android:text="RETURNING ZONE"
+                android:textColor="@color/white"
+                android:background="@drawable/roundbtn"
+                />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:layout_gravity="start"
+                android:layout_width="150sp"
+                android:layout_height="40sp"
+                android:textColor="@color/white"
+                android:background="@drawable/roundbtn"
+                android:id="@+id/palletBtn"
+                android:text="PALLET AIRPORT" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:textColor="@color/white"
+                android:background="@drawable/roundbtn"
+                android:id="@+id/senData"
+                android:text="SEND DATA" />
+
+        </LinearLayout>
+        <!--    <Button android:id="@+id/fetchclients"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:text="Fetch Client"-->
+
+        <!--        android:layout_margin="5dp"-->
+        <!--        android:background="@color/redrose"-->
+        <!--        android:textColor="@color/white"/>-->
+        <!--    <Button-->
+        <!--        android:id="@+id/downloadall"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:text="DOWNLOAD ALL"-->
+
+        <!--        android:layout_margin="5dp"-->
+        <!--        android:background="@color/redrose"-->
+        <!--        android:textColor="@color/white"/>-->
+        <!--    <Button-->
+        <!--        android:id="@+id/btnviewtoday"-->
+        <!--        android:layout_margin="5dp"-->
+        <!--        android:background="@color/redrose"-->
+        <!--        android:textColor="@color/white"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:text="VIEW TODAY"-->
+        <!--        android:layout_marginTop="10sp"/>-->
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

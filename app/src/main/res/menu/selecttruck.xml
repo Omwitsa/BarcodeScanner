@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/tmenu1"
+        android:alphabeticShortcut="a"
+        android:numericShortcut="1"
+        android:title="Truck One" />
+
+    <item
+        android:id="@+id/tmenu2"
+        android:alphabeticShortcut="a"
+        android:numericShortcut="1"
+        android:title="Truck Two" />
+    <item
+        android:id="@+id/tmenu3"
+        android:alphabeticShortcut="a"
+        android:numericShortcut="1"
+        android:title="Truck Three"/>
+    <item
+        android:id="@+id/exit"
+        android:alphabeticShortcut="a"
+        android:numericShortcut="1"
+        android:title="Exit"/>
+    <item
+        android:id="@+id/logout"
+        android:alphabeticShortcut="a"
+        android:numericShortcut="1"
+        android:title="Logout"/>
+
+</menu>

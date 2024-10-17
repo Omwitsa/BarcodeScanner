@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AAA GROWERS</string>
+    <string-array name="farms_array">
+        <item>--Select Farm--</item>
+        <item>Airport</item>
+        <item>Chestnut</item>
+        <item>Kisima Roses</item>
+        <item>Thika</item>
+        <item>Simba Roses</item>
+        <item>Simba Veg</item>
+    </string-array>
+</resources>

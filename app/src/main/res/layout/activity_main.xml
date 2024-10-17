@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        style="@style/df_row_vertical"
+        android:layout_height="match_parent"
+        android:weightSum="12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/black"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/logotransparent"
+                android:layout_gravity="center" />
+
+            <!--            <TextView-->
+            <!--                style="@style/df_h3"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:text="Canada Lo."-->
+            <!--                android:textColor="@color/white" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:background="@color/formBg"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:id="@+id/sendOtpLayout"
+                style="@style/df_row_vertical"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="visible">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="SELECTED FARM:"
+                        android:layout_height="wrap_content"></TextView>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/myfarms"
+                        android:layout_marginLeft="20sp"
+                        android:popupBackground="@color/redrose"
+                        android:spinnerMode="dropdown"
+
+                        android:layout_height="wrap_content"
+                        >
+
+                    </Spinner>
+                </LinearLayout>
+                <!--                <TextView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:id="@+id/farmview"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="FARM: "></TextView>-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutUname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edtUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Username"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        tools:ignore="HardcodedText" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    style="@style/df4_btn_success"
+                    android:layout_gravity="center_vertical"
+                    android:text="Login"/>
+
+                <!--                <ProgressBar-->
+                <!--                    android:id="@+id/progressSendingOtp"-->
+                <!--                    style="?android:attr/progressBarStyleLarge"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:indeterminate="true"-->
+                <!--                    android:visibility="gone"-->
+                <!--                    android:layout_centerInParent="true"/>-->
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:textSize="12sp"-->
+                <!--                    android:layout_marginTop="24dp"-->
+                <!--                    style="@style/df_h6"-->
+                <!--                    android:text="Register Now!"/>-->
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

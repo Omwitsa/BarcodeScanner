@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:background="@color/redrose"
+    >
+    <!--    <ImageView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="150dp"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:background="@drawable/basket"-->
+    <!--        />-->
+
+    <ImageButton
+        android:id="@+id/imageBtnScan"
+        android:background="@drawable/roundbtnblack"
+        android:paddingTop="10dp"
+        android:layout_width="150sp"
+        android:layout_height="70sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/scan"
+        android:onClick="btnOnClickScan">
+
+    </ImageButton>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <Button
+            android:layout_width="150sp"
+            android:layout_height="40sp"
+            android:text="VIEW TODAY"
+            android:background="@drawable/roundbtn"
+            android:id="@+id/viewToday"
+            android:textColor="@color/white"
+            />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/viewAll"
+            android:layout_width="150sp"
+            android:layout_height="40sp"
+            android:layout_gravity="start"
+            android:background="@drawable/roundbtn"
+            android:text="VIEW ALL"
+            android:textColor="@color/white"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <Button
+            android:layout_width="150sp"
+            android:layout_height="40sp"
+            android:background="@drawable/roundbtn"
+            android:id="@+id/exporttoday"
+            android:textColor="@color/white"
+            android:text="DOWNLOAD" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <Button
+            android:layout_gravity="start"
+            android:id="@+id/selectdate"
+            android:layout_width="150sp"
+            android:layout_height="40sp"
+            android:background="@drawable/roundbtn"
+            android:textColor="@color/white"
+            android:text="SELECT DATE" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:background="@drawable/roundbtnblack"
+            android:layout_marginRight="5sp"
+            android:layout_marginLeft="5sp"
+            android:textColor="@color/white"
+            android:onClick="btnOnClickCreateProfile"
+            android:text="Re-create profile"
+            android:textAllCaps="false" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/txtCount"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:background="@drawable/roundbtnblack"
+            android:layout_marginRight="5sp"
+            android:layout_marginLeft="5sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Status..."
+
+            android:textAllCaps="false" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtTemplate"
+            android:layout_marginBottom="10dp"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btnToggleScanning"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:onClick="btnOnClickScan"-->
+        <!--            android:text="Start/Stop Scanning"-->
+        <!--            android:textAllCaps="false" />-->
+
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/layoutRegeions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</GridLayout>
